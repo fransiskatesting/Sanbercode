@@ -1,5 +1,5 @@
-import CategoriesApi from '../../pages/CategoriesApi'
-import categoriesData from '../../fixtures/categoriesData.json'
+import CategoriesApi from '../pages/CategoriesApi'
+import categoriesData from '../fixtures/categoriesData.json'
 
 const {
   newCategory,
@@ -118,7 +118,7 @@ describe('API Testing — Platzi Fake Store: Categories Endpoint', () => {
       cy.log(`Deleting Category ID: ${idToDelete}`)
       CategoriesApi.deleteCategory(idToDelete).then((deleteResponse) => {
         CategoriesApi.assertStatus(deleteResponse, 200)
-        expect(deleteResponse.body).to.eq(true)
+        expect(deleteResponse.body).to.eq('true')
       })
     })
   })
