@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://api.escuelajs.co/api/v1",
+  "endpoints": {
+    "categories": "/categories",
+    "categoryById": "/categories/{id}",
+    "productsByCategory": "/categories/{id}/products"
+  },
+  "newCategory": {
+    "name": "Test Electronics",
+    "image": "https://placehold.co/600x400"
+  },
+  "updatedCategory": {
+    "name": "Updated Electronics"
+  },
+  "invalidCategory": {
+    "name": "",
+    "image": ""
+  },
+  "paginationParams": {
+    "limit": 5,
+    "offset": 0
+  },
+  "expectedValues": {
+    "minCategoryCount": 1,
+    "requiredFields": ["id", "name", "image"],
+    "existingCategoryId": 1
+  }
+}
