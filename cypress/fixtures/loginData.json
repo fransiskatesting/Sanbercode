@@ -1,0 +1,29 @@
+{
+  "validUser": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "invalidUser": {
+    "username": "InvalidUser",
+    "password": "admin123"
+  },
+  "invalidPassword": {
+    "username": "Admin",
+    "password": "wrongpassword"
+  },
+  "forgotPasswordUser": {
+    "username": "Midna"
+  },
+  "urls": {
+    "baseUrl": "https://opensource-demo.orangehrmlive.com/",
+    "loginPage": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "dashboard": "/dashboard",
+    "forgotPassword": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode"
+  },
+  "expectedTexts": {
+    "requiredMessage": "Required",
+    "resetPasswordTitle": "Reset Password",
+    "resetPasswordSuccess": "Reset Password link sent successfully",
+    "orangehrmLink": "http://www.orangehrm.com"
+  }
+}
